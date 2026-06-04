@@ -11,21 +11,40 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
     <nav>
         <div class="navigation container">
             <div class="logo_container">
                 <img src="images/Desi Byte Logo.png" alt="Desi Byte Icon">
             </div>
             <h1 class="nav_heading">Desi<span class="accent_text">Byte</span></h1>
-            <div class="bar_icon">
+            
+            <div class="bar_icon" id="menuOpenBtn">
                 <i class="fas fa-bars"></i>
             </div>
         </div>
     </nav>
 
+    <div class="sidebar" id="sidebarMenu">
+        <div class="sidebar_header">
+            <div class="sidebar_logo">
+                Desi<span>Byte</span>
+            </div>
+            <div class="sidebar_close_btn" id="menuCloseBtn">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+        <ul class="sidebar_links">
+            <li><a href="#home" class="active"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#food"><i class="fas fa-utensils"></i> Food</a></li>
+            <li><a href="#catering"><i class="fas fa-concierge-bell"></i> Catering</a></li>
+            <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+    <div class="sidebar_footer">
+            <a href="#order" class="sidebar_order_btn">Order Now <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+    <div class="sidebar_overlay" id="sidebarOverlay"></div>
     <div class="container">
 
         <div class="hero">
@@ -35,11 +54,9 @@
             <div class="hero_content">
                 <div class="tag">50% Off on All Products</div>
                 <h1>Enjoy Your Delicious Food</h1>
-                <p>
-                    Experience culinary perfection crafted by master chefs. We combine pristine, locally sourced
+                <p>Experience culinary perfection crafted by master chefs. We combine pristine, locally sourced
                     farm-fresh ingredients with generations of gourmet tradition to deliver unforgettable flavor
-                    journeys directly to your table.
-                </p>
+                    journey directly to your table.</p>
                 <button class="explore_btn">Explore Now</button>
             </div>
         </div>
@@ -72,11 +89,9 @@
         </section>
 
         <div class="divider"></div>
-
         <div class="menu">
             <div class="tag">Our Menu</div>
             <h2>Explore Our Menu</h2>
-
             <div class="grid">
                 <div class="item1">
                     <img class="grid-image" src="images/item1.jpg" alt="Rich Golden Curries and Gravies">
@@ -138,6 +153,6 @@
             </div>
         </div>
     </footer>
-</body>
 
-</html>
+    <script src="script.js"></script>
+</body>
