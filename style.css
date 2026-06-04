@@ -75,9 +75,7 @@ nav {
 .bar_icon:hover {
     color: #10b981;
 }
-/* ==========================================================================
-   THE MODERN PREMIUM SIDEBAR DRAWER SYSTEM
-   ========================================================================== */
+/* SIDEBAR  */
 .sidebar {
     position: fixed;
     top: 0;
@@ -90,18 +88,14 @@ nav {
     padding: 30px 24px;
     display: flex;
     flex-direction: column;
-    
-    /* Elegant Slide Motion Vector Curve */
     transform: translateX(100%);
     transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* Toggle Active State class added via JavaScript */
 .sidebar.active {
     transform: translateX(0);
 }
 
-/* Sidebar Top Header Area Layout */
 .sidebar_header {
     display: flex;
     justify-content: space-between;
@@ -119,7 +113,7 @@ nav {
 }
 
 .sidebar_logo span {
-    color: #10b981; /* Brand Culinary Green */
+    color: #10b981; 
 }
 
 .sidebar_close_btn {
@@ -138,17 +132,15 @@ nav {
 
 .sidebar_close_btn:hover {
     background: #fee2e2;
-    color: #ef4444; /* Clean soft red dismiss color */
+    color: #ef4444; 
     transform: rotate(90deg);
 }
-
-/* Core Navigation Menu Styling Layout */
 .sidebar_links {
     list-style: none;
     display: flex;
     flex-direction: column;
     gap: 12px;
-    flex-grow: 1; /* Pushes the order button down to the bottom footer area */
+    flex-grow: 1; 
 }
 
 .sidebar_links li a {
@@ -164,30 +156,27 @@ nav {
     transition: all 0.25s ease;
 }
 
-/* Left Micro-Icons custom color rules inside sidebar list items */
 .sidebar_links li a i {
     font-size: 1.05rem;
     color: #94a3b8;
     transition: color 0.2s ease;
 }
 
-/* Beautiful Active Highlighting rules */
 .sidebar_links li a:hover, 
 .sidebar_links li a.active {
-    background-color: #f0fdf4; /* Very soft green pill background fill */
+    background-color: #f0fdf4; 
     color: #10b981;
 }
 
 .sidebar_links li a:hover i,
 .sidebar_links li a.active i {
-    color: #10b981; /* Lights up the icon color to match */
+    color: #10b981; 
 }
 
 .sidebar_links li a:hover {
     transform: translateX(4px);
 }
 
-/* Sidebar Bottom Action Footer Panel */
 .sidebar_footer {
     border-top: 1px solid #f1f5f9;
     padding-top: 20px;
@@ -216,15 +205,14 @@ nav {
     transform: translateY(-2px);
 }
 
-/* Blur Mask Screen Backdrop Ambient Layer Overlays */
 .sidebar_overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(15, 23, 42, 0.3); /* Premium Slate-tinted overlay shadow */
-    backdrop-filter: blur(5px); /* Ultra-modern blur filter */
+    background-color: rgba(15, 23, 42, 0.3);
+    backdrop-filter: blur(5px); 
     z-index: 150;
     opacity: 0;
     pointer-events: none;
