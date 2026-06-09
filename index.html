@@ -86,33 +86,42 @@
         </section>
 
         <div class="divider"></div>
-        <div class="menu">
-            <div class="tag">Our Menu</div>
-            <h2>Explore Our Menu</h2>
-            <div class="grid">
-                <div class="item1">
-                    <img class="grid-image" src="images/item1.png" alt="Rich and Flavorful Chicken Karahi">
-                </div>
-                <div class="item2">
-                    <img class="grid-image" src="images/item2.png" alt="Sweet and Hot Gulab Jamun">
-                </div>
-                <div class="item3">
-                    <img class="grid-image" src="images/item3.png" alt="Sizzling Hot Charcoal Skewered Kebabs">
-                </div>
-                <div class="item4">
-                    <img class="grid-image" src="images/item4.png" alt="Hot and Spicy Nihaari">
-                </div>
-                <div class="item5">
-                    <img class="grid-image" src="images/item5.png" alt="Fresh and Creamy Kheer">
-                </div>
-                <div class="item6">
-                    <img class="grid-image" src="images/item6.png" alt="Premium Chicken Reshmi Kabab">
-                </div>
-                <div class="item7">
-                    <img class="grid-image" src="images/item7.png" alt="Delecious Fresh Fruit Salad">
-                </div>
-            </div>
+      <div class="menu">
+    <div class="tag">Our Menu</div>
+    <h2>Explore Our Menu</h2>
+
+    <div class="menu_tabs">
+        <button class="tab_btn active" data-filter="all">All Dishes</button>
+        <button class="tab_btn" data-filter="rice">Biryani &amp; Rice</button>
+        <button class="tab_btn" data-filter="karahi">Karahis &amp; Gravies</button>
+        <button class="tab_btn" data-filter="bbq">Sizzling BBQ</button>
+        <button class="tab_btn" data-filter="dessert">Sweet Desserts</button>
+    </div>
+
+    <div class="grid" id="menuGrid">
+        <div class="grid_item item1" data-category="karahi">
+            <img class="grid-image" src="images/item1.png" alt="Rich Golden Curries and Gravies">
         </div>
+        <div class="grid_item item2" data-category="dessert">
+            <img class="grid-image" src="images/item2.png" alt="Sweet and Hot Gulab Jamun">
+        </div>
+        <div class="grid_item item3" data-category="bbq">
+            <img class="grid-image" src="images/item3.png" alt="Sizzling Hot Charcoal Skewered Kebabs">
+        </div>
+        <div class="grid_item item4" data-category="karahi">
+            <img class="grid-image" src="images/item4.png" alt="Hot and Spicy Nihaari">
+        </div>
+        <div class="grid_item item5" data-category="dessert">
+            <img class="grid-image" src="images/item5.png" alt="Fresh Kheer">
+        </div>
+        <div class="grid_item item6" data-category="bbq">
+            <img class="grid-image" src="images/item6.png" alt="Premium Seared Entrées and Steaks">
+        </div>
+        <div class="grid_item item7" data-category="dessert">
+            <img class="grid-image" src="images/item7.png" alt="Delicious Seviyan">
+        </div>
+    </div>
+</div>
     </div>
 
     <footer>

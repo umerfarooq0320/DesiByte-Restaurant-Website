@@ -75,6 +75,46 @@ nav {
 .bar_icon:hover {
     color: #10b981;
 }
+/*MENU FILTERING TABS STYLING */
+.menu_tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 40px;
+    flex-wrap: wrap; }
+
+.tab_btn {
+    background-color: var(--bg-surface);
+    color: var(--text-muted);
+    border: 1px solid var(--border-color);
+    padding: 10px 22px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: all 0.25s ease;
+}
+
+.tab_btn:hover, .tab_btn.active {
+    background-color: var(--accent-color);
+    color: #b3d487 !important;
+    border-color: var(--accent-color);
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2);
+}
+
+.grid_item {
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.grid_item.hidden {
+    display: none !important;
+    opacity: 0;
+    transform: scale(0.8);
+}
 /* SIDEBAR  */
 .sidebar {
     position: fixed;

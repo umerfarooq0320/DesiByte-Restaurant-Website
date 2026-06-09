@@ -32,3 +32,28 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+/*  MENU FILTER CONTROLLER*/
+    const tabButtons = document.querySelectorAll('.tab_btn');
+    const gridItems = document.querySelectorAll('.grid_item');
+
+    tabButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            
+            tabButtons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+
+            const targetFilterValue = button.getAttribute('data-filter');
+
+            gridItems.forEach(item => {
+                const itemCategoryValue = item.getAttribute('data-category');
+
+                if (targetFilterValue === 'all' || targetFilterValue === itemCategoryValue) {
+                    item.classList.remove('hidden');
+                } else {
+                    item.classList.add('hidden');
+                }
+            });
+        });
+    });
+
